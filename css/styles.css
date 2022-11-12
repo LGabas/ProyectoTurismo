@@ -11390,8 +11390,9 @@ hr.divider-light {
 }
 
 header.masthead {
- 
-  background:  url("../assets/img/sky-823624_960_720.jpg");
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: url("../assets/img/sky-823624_960_720.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
