@@ -2908,7 +2908,7 @@ textarea.form-control-lg {
   width: 100%;
   margin-top: 0.25rem;
   font-size: 0.875em;
-  color: #dc3545;
+  color: black;
 }
 
 .invalid-tooltip {
@@ -7718,7 +7718,7 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  
 }
 
 .text-secondary {
@@ -7809,12 +7809,11 @@ textarea.form-control-lg {
 
 .bg-primary {
   background: url(../assets/img/sky-823624_960_720.jpg);
-  background-position: unset;
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-secondary {
@@ -11324,7 +11323,7 @@ hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: #f4623a;
+  background-color: black;
   opacity: 1;
 }
 
@@ -11397,7 +11396,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: url("../assets/img/Fondo2.jpg");
+  background: url("../assets/img/sky-823624_960_720.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
