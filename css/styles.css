@@ -7677,6 +7677,12 @@ textarea.form-control-lg {
   text-align: center !important;
 }
 
+.text-center-experiencia{
+  text-align: center !important;
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+
+}
 .text-decoration-none {
   text-decoration: none !important;
 }
@@ -11306,12 +11312,22 @@ body {
   padding: 8rem 0;
 }
 
+.page-section-experiencia{
+  padding: 8rem 0;
+  background: url("../assets/img/sky-823624_960_720.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75) !important;
 }
 
 .btn-xl {
   padding: 1.25rem 2.25rem;
+  margin: 2.25rem;
   font-size: 0.85rem;
   font-weight: 700;
   text-transform: uppercase;
