@@ -56,7 +56,7 @@
             </div>
         </section>
         <!-- Reserva -->
-        <section class="page-section">
+        <section class="page-section contact" id="contact">
             <div id="contact" class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6 text-center">
@@ -66,7 +66,7 @@
                     </div>
                 </div>
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 map-section" data-aos="fade-up">
                         <!-- * * * * * * * * * * * * * * *-->
                         <!-- * * SB Forms Contact Form * *-->
                         <!-- * * * * * * * * * * * * * * *-->
@@ -74,7 +74,7 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <form id="formReserva" action="forms/contact.php" method="post" role="form" class="php-email-form" data-sb-form-api-token="API_TOKEN">
                             <!-- Name input-->
                             <div class="form-floating mb-3">
                                 <input class="form-control" id="name" type="text" placeholder="Ingrese su nombre..." data-sb-validations="required" />
@@ -90,19 +90,40 @@
                             </div>
                             <!-- Phone number input-->
                             <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Numero de telefono</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">Numero de telefono no valido.</div>
+                                <input class="form-control" id="celular" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <label for="celular">Celular</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">Celular no valido.</div>
                             </div>
                             <div class="form-floating mb-3">
-                                <select class="form-select mt-3" required>
-                                  <option selected disabled value="">Tipo de viaje</option>
-                                  <option value="jweb">En pareja</option>
-                                  <option value="sweb">Compartido</option>
-                                  <option value="pmanager">Perdonalizado</option>
-                                </select>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">Se requiere llenar el campo.</div>
+                                <input type="date"  min="2022-11-11" max="2022-12-12"name="fecha" class="form-control" id="date" placeholder="Dia:" required>
+                              </div>
+                            <div class="form-floating mb-3 addNumber  form-group form-control">
+                                <div class="addNumberGeneral">
+                                <label>Cantidad de personas:</label></div>
+                                <div  class="value_cont">
+                                   <input type="number" name="" id="numero">
+                                </div>
                             </div>
+                            <div class="paquetes border col-md-6 form-group form-control">
+                                <div><label>Selecciona tipo de vuelo:</label></div>
+                                
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input form-control" type="checkbox" id="inlineCheckbox1" value="option1">
+                                  <label class="form-check-label " for="inlineCheckbox1">Vuelo Privado</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input form-control" type="checkbox" id="inlineCheckbox2" value="option2">
+                                  <label class="form-check-label" for="inlineCheckbox2">Vuelo Especial</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                  <input class="form-check-input form-control" type="checkbox" id="inlineCheckbox3" value="option3">
+                                  <label class="form-check-label" for="inlineCheckbox3">Vuelo Bautismo</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input form-control" type="checkbox" id="inlineCheckbox4" value="option4">
+                                    <label class="form-check-label" for="inlineCheckbox4">Vuelo Evento</label>
+                              </div>
+                              </div>
                             <!---->
                             <!-- This is what your users will see when the form-->
                             <!-- has successfully submitted-->
@@ -117,7 +138,8 @@
                             <!-- an error submitting the form-->
                             <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error al mandar el mensaje</div></div>
                             <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Enviar</button></div>
+                            <div class="d-grid"><button class="btn btn-primary btn-xl" id="submit" type="submit">Reservar</button></div>
+                            <div id="respuesta" class=" form-floating mb-3 form-group form-control">
                         </form>
                     </div>
                 </div>
@@ -133,6 +155,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js/reserva.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
