@@ -10,26 +10,26 @@ function validarFormularioReserva(e){
     const celular = document.querySelector("#celular").value
     const fecha = document.querySelector("#date").value
     const contador = Number(document.querySelector("#numero").value)
-    const paquete1 = document.querySelector("#inlineCheckbox1").checked
-    const paquete2 = document.querySelector("#inlineCheckbox2").checked
-    const paquete3 = document.querySelector("#inlineCheckbox3").checked
-    const paquete4 = document.querySelector("#inlineCheckbox4").checked
+    const vueloPrivado = document.querySelector("#inlineCheckbox1").checked
+    const vueloEspecial = document.querySelector("#inlineCheckbox2").checked
+    const vueloBautismo = document.querySelector("#inlineCheckbox3").checked
+    const vueloEvento = document.querySelector("#inlineCheckbox4").checked
 
     let precio = 0;
 
-    if (paquete1 == true){ 
+    if (vueloPrivado == true){ 
         precio = precio + (20000 * contador)
      } 
     
-    if (paquete2 == true){
-        precio =precio +(30000*contador)
+    if (vueloEspecial == true){
+        precio =precio +(30000 * contador)
          }
-    if (paquete3 == true){
-        precio = precio +(25000*contador)
+    if (vueloBautismo == true){
+        precio = precio +(25000 * contador)
          }
     
-    if (paquete4 == true){
-        precio = precio +(10000*contador)
+    if (vueloEvento == true){
+        precio = precio +(10000 * contador)
         }     
     
     const respuesta = document.getElementById("respuesta");
